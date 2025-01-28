@@ -1,8 +1,8 @@
 {
  "scripts": {
   "start": "node --max-old-space-size=4096 -r ts-node/register src/index.ts",
-  "test": "jest",
-    "build": "tsc --noEmitOnError false"
+  "test": "jest"
+   
  },
  "dependencies": {
   "@types/jest": "^29.5.13",
