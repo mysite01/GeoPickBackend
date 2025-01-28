@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="80" failures="33" errors="0" time="24.037">
+  <testsuite name="GameModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:06" time="9.572" tests="3">
+    <testcase classname="GameModel Tests CreateGame with multiple POIs and description" name="GameModel Tests CreateGame with multiple POIs and description" time="0.106">
+    </testcase>
+    <testcase classname="GameModel Tests CreateGame with POI references" name="GameModel Tests CreateGame with POI references" time="0.013">
+    </testcase>
+    <testcase classname="GameModel Tests CreateGame without description" name="GameModel Tests CreateGame without description" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="JWTService.test.ts" errors="0" failures="2" skipped="0" timestamp="2025-01-22T17:30:06" time="10.879" tests="6">
+    <testcase classname="JWTService Tests JWT Erstellung und Verifikation erfolgreich" name="JWTService Tests JWT Erstellung und Verifikation erfolgreich" time="0.057">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname="JWTService Tests JWT Erstellung fehlschlägt bei falschem Passwort" name="JWTService Tests JWT Erstellung fehlschlägt bei falschem Passwort" time="0.006">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname="JWTService Tests JWT Verifikation erfolgreich" name="JWTService Tests JWT Verifikation erfolgreich" time="0.013">
+    </testcase>
+    <testcase classname="JWTService Tests JWT Verifikation fehlschlägt bei ungültigem Token" name="JWTService Tests JWT Verifikation fehlschlägt bei ungültigem Token" time="0.033">
+    </testcase>
+    <testcase classname="JWTService Tests JWT Verifikation fehlschlägt bei abgelaufenem Token" name="JWTService Tests JWT Verifikation fehlschlägt bei abgelaufenem Token" time="0.004">
+    </testcase>
+    <testcase classname="JWTService Tests Fehler, wenn JWT_SECRET nicht gesetzt ist" name="JWTService Tests Fehler, wenn JWT_SECRET nicht gesetzt ist" time="0.005">
+    </testcase>
+    <testcase classname=" Test execution failure: could be caused by test hooks like &apos;afterAll&apos;." name=" Test execution failure: could be caused by test hooks like &apos;afterAll&apos;." time="0">
+      <failure>{&quot;message&quot;:&quot;&quot;,&quot;stack&quot;:&quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected constructor: \u001b[32mJsonWebTokenError\u001b[39m\nReceived constructor: \u001b[31mError\u001b[39m\n\nReceived message: \u001b[31m\&quot;Umgebungsvariable JWT_SECRET ist nicht gesetzt.\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m 37 |\u001b[39m\n     \u001b[90m 38 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39msecret) {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m         \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\&quot;Umgebungsvariable JWT_SECRET ist nicht gesetzt.\&quot;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 40 |\u001b[39m     }\n     \u001b[90m 41 |\u001b[39m\n     \u001b[90m 42 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mjwtString) {\u001b[0m\n\n      \u001b[2mat verifyJWT (\u001b[22msrc/services/JWTService.ts\u001b[2m:39:15)\u001b[22m\n      \u001b[2mat \u001b[22mtests/services/JWTService.test.ts\u001b[2m:54:35\u001b[22m\n      \u001b[2mat Object.&lt;anonymous&gt; (\u001b[22mnode_modules/expect/build/toThrowMatchers.js\u001b[2m:74:11)\u001b[22m\n      \u001b[2mat Object.throwingMatcher [as toThrow] (\u001b[22mnode_modules/expect/build/index.js\u001b[2m:320:21)\u001b[22m\n      \u001b[2mat Timeout._onTimeout (\u001b[22mtests/services/JWTService.test.ts\u001b[2m:54:44)\u001b[22m\n    at Timeout._onTimeout (C:\\Users\\tbrei\\Documents\\Studium\\Projekt\\newBack\\geo-pick-points-backend\\tests\\services\\JWTService.test.ts:54:44)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)&quot;}</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="UserModel.test.ts" errors="0" failures="3" skipped="0" timestamp="2025-01-22T17:30:06" time="10.66" tests="3">
+    <testcase classname=" Create User" name=" Create User" time="0.092">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" Find User by name" name=" Find User by name" time="0.007">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" Delete User" name=" Delete User" time="0.004">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="AuthenticationService.test.ts" errors="0" failures="3" skipped="0" timestamp="2025-01-22T17:30:06" time="11.489" tests="3">
+    <testcase classname=" soll einen Benutzer erfolgreich einloggen, wenn die Anmeldedaten korrekt sind" name=" soll einen Benutzer erfolgreich einloggen, wenn die Anmeldedaten korrekt sind" time="0.166">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" soll `false` zurückgeben, wenn der Benutzer nicht existiert" name=" soll `false` zurückgeben, wenn der Benutzer nicht existiert" time="0.013">
+      <failure>Error: User not found
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\AuthenticationService.ts:15:15
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\AuthenticationService.ts:1417:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" soll `false` zurückgeben, wenn das Passwort falsch ist" name=" soll `false` zurückgeben, wenn das Passwort falsch ist" time="0.006">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="TeamModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:16" time="5.962" tests="1">
+    <testcase classname=" Create Team with multiple Players (Mocked)" name=" Create Team with multiple Players (Mocked)" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="POIListsModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:22" time="1.138" tests="3">
+    <testcase classname="POIList Model Tests Should create a POIList with valid data" name="POIList Model Tests Should create a POIList with valid data" time="0.082">
+    </testcase>
+    <testcase classname="POIList Model Tests Should fail to create a POIList without name" name="POIList Model Tests Should fail to create a POIList without name" time="0.012">
+    </testcase>
+    <testcase classname="POIList Model Tests Should fetch a POIList by ID" name="POIList Model Tests Should fetch a POIList by ID" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="POIModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:23" time="1.121" tests="1">
+    <testcase classname=" sollte einen POI erfolgreich erstellen" name=" sollte einen POI erfolgreich erstellen" time="0.08">
+    </testcase>
+  </testsuite>
+  <testsuite name="PlayerService.test.ts" errors="0" failures="1" skipped="0" timestamp="2025-01-22T17:30:06" time="18.48" tests="5">
+    <testcase classname=" getAllPlayers - Alle Spieler eines Spiels abrufen" name=" getAllPlayers - Alle Spieler eines Spiels abrufen" time="0.222">
+    </testcase>
+    <testcase classname=" getPlayer - Spieler mit bestimmter ID abrufen" name=" getPlayer - Spieler mit bestimmter ID abrufen" time="0.018">
+    </testcase>
+    <testcase classname=" createPlayer - Spieler erstellen" name=" createPlayer - Spieler erstellen" time="0.013">
+      <failure>ValidationError: Player validation failed: teamId: Cast to ObjectId failed for value &quot;1234&quot; (type string) at path &quot;teamId&quot; because of &quot;BSONError&quot;
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at model.$set (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:1474:12)
+    at model.$set (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:1128:16)
+    at model.Document (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:177:12)
+    at model.Model (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\model.js:125:12)
+    at new model (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\model.js:4611:15)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:68:26
+    at Generator.next (&lt;anonymous&gt;)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2778:39
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2727:10)
+    at createPlayer (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2953:10)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\services\PlayerService.test.ts:36:45
+    at Generator.next (&lt;anonymous&gt;)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\services\PlayerService.test.ts:8:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\services\PlayerService.test.ts:4:12)
+    at Object.&lt;anonymous&gt; (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\services\PlayerService.test.ts:29:53)
+    at Promise.then.completed (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" deletePlayer - Spieler löschen" name=" deletePlayer - Spieler löschen" time="0.023">
+    </testcase>
+    <testcase classname=" deletePlayer - Fehler bei nicht existierendem Spieler" name=" deletePlayer - Fehler bei nicht existierendem Spieler" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="GameInstanceModel.test.ts" errors="0" failures="1" skipped="0" timestamp="2025-01-22T17:30:06" time="18.598" tests="1">
+    <testcase classname=" GameInstance Model soll erfolgreich erstellt werden" name=" GameInstance Model soll erfolgreich erstellt werden" time="0.072">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GameInstanceService.test.ts" errors="0" failures="4" skipped="0" timestamp="2025-01-22T17:30:06" time="19.054" tests="5">
+    <testcase classname=" sollte eine GameInstance erfolgreich erstellen und zurückgeben" name=" sollte eine GameInstance erfolgreich erstellen und zurückgeben" time="0.198">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" sollte den Status einer GameInstance erfolgreich aktualisieren" name=" sollte den Status einer GameInstance erfolgreich aktualisieren" time="0.007">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" sollte eine GameInstance anhand der ID erfolgreich abrufen" name=" sollte eine GameInstance anhand der ID erfolgreich abrufen" time="0.006">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" sollte eine GameInstance erfolgreich löschen" name=" sollte eine GameInstance erfolgreich löschen" time="0.006">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" sollte einen Fehler werfen, wenn die GameInstance nicht existiert" name=" sollte einen Fehler werfen, wenn die GameInstance nicht existiert" time="0.025">
+    </testcase>
+  </testsuite>
+  <testsuite name="PlayerModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:24" time="1.07" tests="2">
+    <testcase classname=" CreatePlayer test" name=" CreatePlayer test" time="0.118">
+    </testcase>
+    <testcase classname=" FindPlayer test" name=" FindPlayer test" time="0.023">
+    </testcase>
+  </testsuite>
+  <testsuite name="UserService.test.ts" errors="0" failures="2" skipped="0" timestamp="2025-01-22T17:30:06" time="20.122" tests="4">
+    <testcase classname="UserService Tests Create User" name="UserService Tests Create User" time="1.404">
+      <failure>Error: Fehler beim Erstellen des Benutzers: Message failed: 550 5.4.6 Unusual sending activity detected. Please try after sometime. &lt;a href=https://www.zoho.eu/mail/help/usage-policy.html target=_blank&gt;Learn more.&lt;/a&gt; To unblock &lt;a href=https://mail.zoho.eu/UnblockMe target=_blank&gt;Click here.&lt;/a&gt;
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:72:15
+    at Generator.throw (&lt;anonymous&gt;)
+    at rejected (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:1944:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="UserService Tests Get User by ID" name="UserService Tests Get User by ID" time="0.087">
+    </testcase>
+    <testcase classname="UserService Tests Delete User by ID" name="UserService Tests Delete User by ID" time="0.104">
+    </testcase>
+    <testcase classname=" should create a new user and send a verification email" name=" should create a new user and send a verification email" time="0.875">
+      <failure>Error: Fehler beim Erstellen des Benutzers: Message failed: 550 5.4.6 Unusual sending activity detected. Please try after sometime. &lt;a href=https://www.zoho.eu/mail/help/usage-policy.html target=_blank&gt;Learn more.&lt;/a&gt; To unblock &lt;a href=https://mail.zoho.eu/UnblockMe target=_blank&gt;Click here.&lt;/a&gt;
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:72:15
+    at Generator.throw (&lt;anonymous&gt;)
+    at rejected (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:1944:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GameService.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:17" time="9.411" tests="5">
+    <testcase classname="GameService Tests Create Game with POIs" name="GameService Tests Create Game with POIs" time="0.075">
+    </testcase>
+    <testcase classname="GameService Tests Create Game without POIs" name="GameService Tests Create Game without POIs" time="0.015">
+    </testcase>
+    <testcase classname="GameService Tests Get Game by ID" name="GameService Tests Get Game by ID" time="0.023">
+    </testcase>
+    <testcase classname="GameService Tests Delete Game by ID" name="GameService Tests Delete Game by ID" time="0.017">
+    </testcase>
+    <testcase classname="GameService Tests Get Game by non-existent ID" name="GameService Tests Get Game by non-existent ID" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="POIService.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:17" time="10.115" tests="6">
+    <testcase classname=" sollte einen neuen POI erfolgreich erstellen" name=" sollte einen neuen POI erfolgreich erstellen" time="0.07">
+    </testcase>
+    <testcase classname=" sollte einen POI erfolgreich löschen" name=" sollte einen POI erfolgreich löschen" time="0.025">
+    </testcase>
+    <testcase classname=" sollte einen POI anhand der ID erfolgreich abrufen" name=" sollte einen POI anhand der ID erfolgreich abrufen" time="0.015">
+    </testcase>
+    <testcase classname=" sollte alle POIs erfolgreich abrufen" name=" sollte alle POIs erfolgreich abrufen" time="0.019">
+    </testcase>
+    <testcase classname=" sollte Fehler werfen wenn der POI beim Löschen nicht gefunden wird" name=" sollte Fehler werfen wenn der POI beim Löschen nicht gefunden wird" time="0.02">
+    </testcase>
+    <testcase classname=" sollte Fehler werfen wenn der POI beim Abrufen nicht gefunden wird" name=" sollte Fehler werfen wenn der POI beim Abrufen nicht gefunden wird" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="POILists.Service.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:18" time="9.61" tests="3">
+    <testcase classname="POIList Service Tests Should create a POIList with valid data" name="POIList Service Tests Should create a POIList with valid data" time="0.069">
+    </testcase>
+    <testcase classname="POIList Service Tests Should delete a POIList by ID" name="POIList Service Tests Should delete a POIList by ID" time="0.024">
+    </testcase>
+    <testcase classname="POIList Service Tests Should return false when deleting non-existent POIList" name="POIList Service Tests Should return false when deleting non-existent POIList" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="user.test.ts" errors="0" failures="2" skipped="0" timestamp="2025-01-22T17:30:06" time="22.656" tests="3">
+    <testcase classname="User API Routes POST /api/user - Create User" name="User API Routes POST /api/user - Create User" time="0.098">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 201
+Received: 500
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\user.test.ts:18:37
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\user.test.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="User API Routes GET /api/user/:id - Get User by ID" name="User API Routes GET /api/user/:id - Get User by ID" time="0.015">
+      <failure>ValidationError: User validation failed: email: Path `email` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname="User API Routes DELETE /api/user/:id - Delete non-existent User returns 404" name="User API Routes DELETE /api/user/:id - Delete non-existent User returns 404" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="gameInstance.test.ts" errors="0" failures="3" skipped="0" timestamp="2025-01-22T17:30:06" time="22.697" tests="3">
+    <testcase classname=" sollte eine neue GameInstance erstellen und 201 zurückgeben" name=" sollte eine neue GameInstance erstellen und 201 zurückgeben" time="0.075">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" sollte eine GameInstance anhand der ID abrufen und 200 zurückgeben" name=" sollte eine GameInstance anhand der ID abrufen und 200 zurückgeben" time="0.01">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+    <testcase classname=" sollte eine GameInstance erfolgreich löschen und 200 mit Bestätigung zurückgeben" name=" sollte eine GameInstance erfolgreich löschen und 200 mit Bestätigung zurückgeben" time="0.008">
+      <failure>ValidationError: Game validation failed: userId: Path `userId` is required., maxTeam: Path `maxTeam` is required.
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="login.test.ts" errors="0" failures="4" skipped="0" timestamp="2025-01-22T17:30:06" time="22.728" tests="5">
+    <testcase classname=" /api/login POST, Positivtest" name=" /api/login POST, Positivtest" time="0.073">
+      <failure>Error: Fehler beim Erstellen des Benutzers: User validation failed: email: Path `email` is required.
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:72:15
+    at Generator.throw (&lt;anonymous&gt;)
+    at rejected (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:1944:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" /api/login DELETE, Positivtest" name=" /api/login DELETE, Positivtest" time="0.012">
+      <failure>Error: Fehler beim Erstellen des Benutzers: User validation failed: email: Path `email` is required.
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:72:15
+    at Generator.throw (&lt;anonymous&gt;)
+    at rejected (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:1944:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" /api/login GET, Positivtest" name=" /api/login GET, Positivtest" time="0.008">
+      <failure>Error: Fehler beim Erstellen des Benutzers: User validation failed: email: Path `email` is required.
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:72:15
+    at Generator.throw (&lt;anonymous&gt;)
+    at rejected (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:1944:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" /api/login POST, Negativtest" name=" /api/login POST, Negativtest" time="0.078">
+      <failure>Error: Fehler beim Erstellen des Benutzers: User validation failed: email: Path `email` is required.
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:72:15
+    at Generator.throw (&lt;anonymous&gt;)
+    at rejected (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\UserService.ts:1944:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" /api/login GET, Negativtest" name=" /api/login GET, Negativtest" time="0.029">
+    </testcase>
+  </testsuite>
+  <testsuite name="game.test.ts" errors="0" failures="2" skipped="0" timestamp="2025-01-22T17:30:06" time="22.833" tests="4">
+    <testcase classname="Game API Routes POST /api/game - Create Game" name="Game API Routes POST /api/game - Create Game" time="0.119">
+    </testcase>
+    <testcase classname="Game API Routes GET /api/game/:id - Get Game by ID" name="Game API Routes GET /api/game/:id - Get Game by ID" time="0.088">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 500
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\game.test.ts:42:37
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\game.test.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Game API Routes DELETE /api/game/:id - Delete Game by ID" name="Game API Routes DELETE /api/game/:id - Delete Game by ID" time="0.02">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 204
+Received: 404
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\game.test.ts:60:37
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\game.test.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Game API Routes DELETE /api/game/:id - Delete non-existent Game returns 404" name="Game API Routes DELETE /api/game/:id - Delete non-existent Game returns 404" time="0.041">
+    </testcase>
+  </testsuite>
+  <testsuite name="POILists.test.ts" errors="0" failures="2" skipped="0" timestamp="2025-01-22T17:30:06" time="22.603" tests="4">
+    <testcase classname="POIList API Routes POST /api/poilist - Create POIList" name="POIList API Routes POST /api/poilist - Create POIList" time="0.097">
+    </testcase>
+    <testcase classname="POIList API Routes GET /api/poilist/:id - Get POIList by ID" name="POIList API Routes GET /api/poilist/:id - Get POIList by ID" time="0.089">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 404
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\POILists.test.ts:30:37
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\POILists.test.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="POIList API Routes DELETE /api/poilist/:id - Delete POIList by ID" name="POIList API Routes DELETE /api/poilist/:id - Delete POIList by ID" time="0.049">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 204
+Received: 404
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\POILists.test.ts:42:37
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\POILists.test.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="POIList API Routes DELETE /api/poilist/:id - Delete non-existent POIList" name="POIList API Routes DELETE /api/poilist/:id - Delete non-existent POIList" time="0.077">
+    </testcase>
+  </testsuite>
+  <testsuite name="player.test.ts" errors="0" failures="4" skipped="0" timestamp="2025-01-22T17:30:06" time="22.874" tests="6">
+    <testcase classname=" Test getPlayer, korrekte eingaben" name=" Test getPlayer, korrekte eingaben" time="0.082">
+      <failure>ValidationError: Player validation failed: teamId: Cast to ObjectId failed for value &quot;1234&quot; (type string) at path &quot;teamId&quot; because of &quot;BSONError&quot;
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at model.$set (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:1474:12)
+    at model.$set (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:1128:16)
+    at model.Document (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:177:12)
+    at model.Model (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\model.js:125:12)
+    at new model (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\model.js:4611:15)
+    at Object.&lt;anonymous&gt; (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:68:26)
+    at Generator.next (&lt;anonymous&gt;)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2778:39
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2727:10)
+    at Object.createPlayer (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2953:10)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:7:43
+    at Generator.next (&lt;anonymous&gt;)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:31:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:27:12)
+    at Object.&lt;anonymous&gt; (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:6:53)
+    at Promise.then.completed (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" Test createPlayer, korrekte eingaben" name=" Test createPlayer, korrekte eingaben" time="0.1">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 201
+Received: 404
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:16:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" Test create Player, keine eingaben" name=" Test create Player, keine eingaben" time="0.016">
+    </testcase>
+    <testcase classname=" Test create Player, falscher datentyp, gameid" name=" Test create Player, falscher datentyp, gameid" time="0.044">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 201
+Received: 404
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:29:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" Test delete Player" name=" Test delete Player" time="0.068">
+      <failure>ValidationError: Player validation failed: teamId: Cast to ObjectId failed for value &quot;1234&quot; (type string) at path &quot;teamId&quot; because of &quot;BSONError&quot;
+    at model.Object.&lt;anonymous&gt;.Document.invalidate (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:3318:32)
+    at model.$set (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:1474:12)
+    at model.$set (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:1128:16)
+    at model.Document (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\document.js:177:12)
+    at model.Model (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\model.js:125:12)
+    at new model (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\mongoose\lib\model.js:4611:15)
+    at Object.&lt;anonymous&gt; (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:68:26)
+    at Generator.next (&lt;anonymous&gt;)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2778:39
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2727:10)
+    at Object.createPlayer (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\src\services\PlayerService.ts:2953:10)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:34:40
+    at Generator.next (&lt;anonymous&gt;)
+    at C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:31:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:27:12)
+    at Object.&lt;anonymous&gt; (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\tests\routes\player.test.ts:32:37)
+    at Promise.then.completed (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\tbrei\Documents\Studium\Projekt\newBack\geo-pick-points-backend\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" Test delete Player, falsche Id" name=" Test delete Player, falsche Id" time="0.039">
+    </testcase>
+  </testsuite>
+  <testsuite name="poi.test.ts" errors="0" failures="0" skipped="0" timestamp="2025-01-22T17:30:06" time="22.694" tests="4">
+    <testcase classname=" POST /api/poi - sollte einen neuen POI erstellen" name=" POST /api/poi - sollte einen neuen POI erstellen" time="0.439">
+    </testcase>
+    <testcase classname=" GET /api/poi/:id - sollte einen POI nach ID abrufen" name=" GET /api/poi/:id - sollte einen POI nach ID abrufen" time="0.029">
+    </testcase>
+    <testcase classname=" DELETE /api/poi/:id - sollte einen POI nach ID löschen" name=" DELETE /api/poi/:id - sollte einen POI nach ID löschen" time="0.017">
+    </testcase>
+    <testcase classname=" GET /api/poi - sollte alle POIs abrufen" name=" GET /api/poi - sollte alle POIs abrufen" time="0.022">
+    </testcase>
+  </testsuite>
+</testsuites>
