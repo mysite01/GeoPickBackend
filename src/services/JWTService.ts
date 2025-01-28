@@ -22,7 +22,7 @@ export async function verifyPasswordAndCreateJWT(name: string, password: string)
     };
 
     const jwtString = sign(payload, secret, {
-         // @ts-ignore: TypeScript warnt hier, aber die Parameter sind korrekt.
+      
         expiresIn: ttl,
         algorithm: "HS256",
     });
